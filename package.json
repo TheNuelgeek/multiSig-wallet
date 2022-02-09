@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "truffle": "^5.4.32"
+  },
+  "name": "multiSig-wallet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TheNuelgeek/multiSig-wallet.git",
+  "author": "TheNuelgeek <thenuelgeekmain@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.15"
   }
 }
