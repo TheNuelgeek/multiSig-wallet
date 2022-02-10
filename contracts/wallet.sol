@@ -28,7 +28,7 @@ contract Wallet{
         return approvers;
     }
 
-     // Function to return the list of approvers
+     // Function to return the list of transfer
     function getTransfers()external view returns(Transfer [] memory){
         return transfers;
     }
@@ -52,7 +52,7 @@ contract Wallet{
     }
 
     function approveTransfers(uint id) external onlyApprove{
-        require(transfers[id].sent == false, "Transfer has alreay been sent");
+        require(transfers[id].sent == false, "Transfer has already been sent");
         require(approvals[msg.sender][id] == false, "cannot approve transfer twice");
 
         approvals[msg.sender][id] == true;
