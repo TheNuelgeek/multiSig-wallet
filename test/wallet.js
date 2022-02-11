@@ -18,6 +18,7 @@ contract('Wallet', (accounts) => {
 
     });
 
+    //create transfer error
     it('should create transfers', async () => {
         await wallet.createTransfer(100, accounts[5], {from: accounts[0]});
         const transfers = await wallet.getTransfers();
